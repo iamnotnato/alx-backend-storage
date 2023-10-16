@@ -6,9 +6,5 @@
 def list_all(mongo_collection):
     """ lists all documents in a collection
     """
-    cursor = mongo_collection.find({})
-    if not cursor.alive:
-     return []
-    else:
-     return cursor
-
+    result = mongo_collection.find({})
+    return result
