@@ -4,7 +4,7 @@
 
 
 def top_students(mongo_collection):
-    ''a Python function that returns all students sorted by average score
+    '''a Python function that returns all students sorted by average score
     '''
     students = mongo_collection.aggregate(
         [
